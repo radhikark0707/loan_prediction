@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h1>Loan Prediction Form</h1>
+    <form action="/predict" method="POST">
+        <label for="gender">Gender (0=Female, 1=Male):</label><br>
+        <input type="number" id="gender" name="gender"><br><br>
+
+        <label for="married">Married (0=No, 1=Yes):</label><br>
+        <input type="number" id="married" name="married"><br><br>
+
+        <label for="dependents">Dependents:</label><br>
+        <input type="number" id="dependents" name="dependents"><br><br>
+
+        <label for="education">Education (0=Not Graduate, 1=Graduate):</label><br>
+        <input type="number" id="education" name="education"><br><br>
+
+        <label for="self_employed">Self Employed (0=No, 1=Yes):</label><br>
+        <input type="number" id="self_employed" name="self_employed"><br><br>
+
+        <label for="applicant_income">Applicant Income:</label><br>
+        <input type="number" id="applicant_income" name="applicant_income"><br><br>
+
+        <label for="coapplicant_income">Coapplicant Income:</label><br>
+        <input type="number" id="coapplicant_income" name="coapplicant_income"><br><br>
+
+        <label for="loan_amount">Loan Amount:</label><br>
+        <input type="number" id="loan_amount" name="loan_amount"><br><br>
+
+        <label for="loan_amount_term">Loan Amount Term:</label><br>
+        <input type="number" id="loan_amount_term" name="loan_amount_term"><br><br>
+
+        <label for="credit_history">Credit History (0=No, 1=Yes):</label><br>
+        <input type="number" id="credit_history" name="credit_history"><br><br>
+
+        <label for="property_area">Property Area (0=Rural, 1=Semiurban, 2=Urban):</label><br>
+        <input type="number" id="property_area" name="property_area"><br><br>
+
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
